@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="trangvn.css">
+    <link rel="stylesheet" href="Movie.css">
 </head>
 <body>
 <header>
     <a href="#" class="logo">iMovie</a>
     <ul class="nav">
         <li><a href="#"><i class="fa fa-home"></i></a></li>
-        <li><a href="trangchu2.html"><i class='bx bxs-home-alt-2'></i>Trang Chủ</a></li>
+        <li><a href="#"><i class='bx bxs-home-alt-2'></i> Trang Chủ</a></li>
 
         <!-- Dropdown bắt đầu -->
 <li class="dropdown">
@@ -110,192 +110,124 @@
         <i class='bx bx-search-alt'></i>
     </div>
 </header>
-<section class="banner">
+ <div class="movie-container">
+    <div class="poster" id="poster">
+      <img src="https://i.pinimg.com/736x/c6/a4/10/c6a410ceb4f655aa4b40f772165fc57c.jpg" alt="Góc Khuất Poster">
+          <div class="play">
+            <i class='bx bx-play-circle' onclick="showTrailer2()"></i>
+            <div class="trailer-video2" id="trailer-video2" style="display: none;">
+             <iframe width="100%" height="400" 
+              src="https://www.youtube.com/embed/w7UFYFljdEY" title="Video"
+              title="Trailer" frameborder="0" allowfullscreen></iframe>
+</div>
+          </div>
+      <div class="thumbnail">
+        <img src="https://i.pinimg.com/736x/e4/e2/5f/e4e25ff5981a3b9094d28927eddfa35d.jpg" alt="Thumbnail">
+      </div>
+    </div>
+    <div class="trailer-video" id="trailer-video" style="display: none;">
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/w7UFYFljdEY"
+  title="Trailer" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="trailer-video1" id="trailer-video1" style="display: none;">
+  <iframe width="100%" height="400" 
+   src="https://www.youtube.be/embed/ePO5M5DE01I" title="Video"
+    title="Trailer" frameborder="0" allowfullscreen></iframe>
+</div>
+     <div class="info">
+        <div class="info-1">
+      <h1>Tiger</h1>
+      <h2>Sharp Corner (2019)</h2>
+      <div class="buttons">
+       <button class="trailer" onclick="showTrailer()">🎬 Trailer</button>
+        <button class="watch" onclick="showTrailer1()">⏵ Xem phim</button>
+      </div>
+      </div>
+      <div class="rating">
+        <span>⭐⭐⭐⭐☆</span> (7 điểm / 21 lượt)
+      </div>
+      <ul class="details">
+        <li><strong>Đang phát:</strong> HD Vietsub</li>
+        <li><strong>Thể loại:</strong> Phim Tâm Lý, Phim Ma – Kinh Dị</li>
+        <li><strong>Điểm RottenTomatoes:</strong> 92%</li>
+        <li><strong>Năm phát hành:</strong> 2025</li>
+        <li><strong>Đạo diễn:</strong> Jason Buxton</li>
+        <li><strong>Thời lượng:</strong> 1 giờ 50 phút</li>
+        <li><strong>Quốc gia:</strong> Phim Âu Mỹ</li>
+        <li><strong>Điểm IMDb:</strong> <span class="imdb">5.9</span></li>
+        <li><strong>Diễn viên:</strong> Ben Foster, Cobie Smulders, William Kosovic</li>
+      </ul>
+    </div>
+      <div class="synopsis">
+    <h3>Nội dung phim</h3>
+    <p>
+      Góc Khuất Sharp Corner 2025 Josh McCall, một người đàn ông tận tụy với gia đình,
+      cùng vợ Rachel và con trai Max chuyển đến ngôi nhà mơ ước ở vùng nông thôn.
+      Tuy nhiên, niềm vui nhanh chóng tắt khi họ phát hiện ngôi nhà nằm gần một khúc cua nguy hiểm,
+      nơi thường xuyên xảy ra tai nạn chết người...
+    </p>
+  </div>
+    <div class="tags">
+    <strong>Tags:</strong> <span>goc khuất</span>, <span>sharp corner</span>
+  </div>
+    <section class="banner">
   <div class="content">
     <ul>
       <li class="image-list">
         <div class="movie-card">
-          <span class="label red">Full HD</span>
-          <a href="Movie.html"><img src="https://i.pinimg.com/736x/f8/82/5e/f8825e2b70aec84081a17d89859cc46b.jpg" alt=""></a>
-          <p class="title">Mắt biếc</p>
+          <span class="label red">HD-Vietsub</span>
+          <img src="https://i.pinimg.com/736x/21/04/83/21048302d21ff35e34767dee8415f65b.jpg" alt="">
+          <p class="title">Những Mẩu Chuyện Kỳ Lạ</p>
         </div>
         <div class="movie-card">
-          <span class="label yellow">Full HD</span>
-          <a href="Muicochay.html"><img src="https://i.pinimg.com/736x/80/cb/3f/80cb3fcbd0026665a935644027cc109f.jpg" alt=""></a>
-          <p class="title">Mùi cỏ cháy</p>
+          <span class="label yellow">Tập 9 - Vietsub</span>
+          <img src="https://i.pinimg.com/736x/60/ac/e4/60ace487e781611cf4c37c0f029c8d4b.jpg" alt="">
+          <p class="title">MobLand</p>
         </div>
         <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <a href="DiaDao.html"><img src="https://i.pinimg.com/736x/30/e9/74/30e974b3521fdc3a8e4bf8abe827c91c.jpg" alt=""></a>
-          <p class="title">Địa đạo: Mặt trời trong bóng tối </p>
+          <span class="label red">Tập 7 - Vietsub</span>
+          <img src="https://i.pinimg.com/736x/17/0a/dc/170adc747b019020ff0c22863f0bfc82.jpg" alt="">
+          <p class="title">The Last of Us (Phần 2)</p>
         </div>
         <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <a href="Toithayhoa.html"><img src="https://i.pinimg.com/736x/14/12/a8/1412a83b0e1bfecfd2dd0cc1243534a2.jpg" alt=""></a>
-          <p class="title">Tôi thấy hoa vàng trên cỏ xanh</p>
+          <span class="label red">HD-Vietsub</span>
+          <img src="https://i.pinimg.com/736x/b4/70/28/b47028c69547b0a00908a7e2b07d6c81.jpg" alt="">
+          <p class="title">Suối Nguồn Tươi Trẻ</p>
         </div>
       </li>
     </ul>
         <ul>
       <li class="image-list">
         <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/09/8e/ed/098eed82e5ca988573b2fa8c594ce210.jpg" alt="">
-          <p class="title">Kẻ ăn hồn</p>
+          <span class="label red">HD-Vietsub</span>
+          <img src="https://i.pinimg.com/736x/21/04/83/21048302d21ff35e34767dee8415f65b.jpg" alt="">
+          <p class="title">Những Mẩu Chuyện Kỳ Lạ</p>
         </div>
         <div class="movie-card">
-            <span class="label yellow">Full HD</span>
-          <img src="https://i.pinimg.com/736x/d7/ce/af/d7ceaf9e193dd259e6a97fedb2c2d6c1.jpg" alt="">
-          <p class="title">Tết ở làng địa ngục</p>
+          <span class="label yellow">Tập 9 - Vietsub</span>
+          <img src="https://i.pinimg.com/736x/60/ac/e4/60ace487e781611cf4c37c0f029c8d4b.jpg" alt="">
+          <p class="title">MobLand</p>
         </div>
         <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/5d/df/85/5ddf85e330e4607aff35450bcdbee11d.jpg" alt="">
-          <p class="title">Tiệc trăng máu</p>
+          <span class="label red">Tập 7 - Vietsub</span>
+          <img src="https://i.pinimg.com/736x/17/0a/dc/170adc747b019020ff0c22863f0bfc82.jpg" alt="">
+          <p class="title">The Last of Us (Phần 2)</p>
         </div>
         <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/14/7b/00/147b00137a792071c8f2dbe638a08577.jpg" alt="">
-          <p class="title">Thám tử Kiên</p>
+          <span class="label red">HD-Vietsub</span>
+          <img src="https://i.pinimg.com/736x/b4/70/28/b47028c69547b0a00908a7e2b07d6c81.jpg" alt="">
+          <p class="title">Suối Nguồn Tươi Trẻ</p>
         </div>
       </li>
     </ul>
-            <ul>
-      <li class="image-list">
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/70/b5/7e/70b57e9449cf87fdc0601596be20df2a.jpg" alt="">
-          <p class="title">Người vợ cuối cùng</p>
-        </div>
-        <div class="movie-card">
-            <span class="label yellow">Full HD</span>
-          <img src="https://i.pinimg.com/736x/ca/69/b4/ca69b4005ee49e27d794a069e44b15f2.jpg" alt="">
-          <p class="title">Đào, phở và piano</p>
-        </div>
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/ad/a4/63/ada4639bea0f10a3bb6d8cec74bcdecf.jpg" alt="">
-          <p class="title">Nhà gia tiên</p>
-        </div>
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/e8/43/08/e84308c9ebb22449a17977f7cd1deaac.jpg" alt="">
-          <p class="title">Mai</p>
-        </div>
-      </li>
-    </ul>
-            <ul>
-      <li class="image-list">
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/72/9e/e1/729ee16ed01d9af3a3ccf919791205c1.jpg" alt="">
-          <p class="title">Tro tàn rực rỡ</p>
-        </div>
-        <div class="movie-card">
-            <span class="label yellow">Full HD</span>
-          <img src="https://i.pinimg.com/736x/dc/de/46/dcde4681e6f06e2b0d4e253b1cb5789a.jpg" alt="">
-          <p class="title">Linh miêu</p>
-        </div>
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/04/43/39/0443399384d64068bde69bbadc017145.jpg" alt="">
-          <p class="title">Mùa hè chiều thẳng đứng</p>
-        </div>
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/06/ef/f8/06eff85f48e9b02bf5a2142e45f13214.jpg" alt="">
-          <p class="title">Siêu sao siêu ngố</p>
-        </div>
-      </li>
-    </ul>
-            <ul>
-      <li class="image-list">
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/58/be/e3/58bee3693fcad3819d3fb010639b3f58.jpg" alt="">
-          <p class="title">Mùa ổi</p>
-        </div>
-        <div class="movie-card">
-            <span class="label yellow">Full HD</span>
-          <img src="https://i.pinimg.com/736x/aa/b9/23/aab923180658b429eb3b5a22ac019bdb.jpg" alt="">
-          <p class="title">Chạy án</p>
-        </div>
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src=" https://i.pinimg.com/736x/90/98/0c/90980c034514e77e0621a028f1af4fc8.jpg" alt="">
-          <p class="title">Mùa đu đủ xanh</p>
-        </div>
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src=" https://i.pinimg.com/736x/b8/53/e5/b853e54902e8aa331a7db71cba4446ea.jpg" alt="">
-          <p class="title">Cô Ba Sài Gòn</p>
-        </div>
-      </li>
-    </ul>
-            <ul>
-      <li class="image-list">
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/9f/0d/07/9f0d0792c69c4e99c0a333efb249df68.jpg" alt="">
-          <p class="title">Thưa mẹ con đi</p>
-        </div>
-        <div class="movie-card">
-            <span class="label yellow">Full HD</span>
-          <img src="https://i.pinimg.com/736x/86/87/fa/8687fa65059ef8a153de3714b067e496.jpg" alt="">
-          <p class="title">Ròm</p>
-        </div>
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src=" https://i.pinimg.com/736x/92/99/b4/9299b4d3fdfdae35440efc536857aec7.jpg" alt="">
-          <p class="title">Khi tôi 20</p>
-        </div>
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/79/a9/40/79a940ff0188a8a658f22cff1af7d78d.jpg" alt="">
-          <p class="title">Cô gái trên sông</p>
-        </div>
-      </li>
-    </ul>
-            <ul>
-      <li class="image-list">
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src=" https://i.pinimg.com/736x/dd/13/cd/dd13cd111b6da7452672cbe8d3ae8177.jpg" alt="">
-          <p class="title">Em bé Hà Nội</p>
-        </div>
-        <div class="movie-card">
-            <span class="label yellow">Full HD</span>
-          <img src="https://i.pinimg.com/736x/6f/e3/51/6fe35191d4bb5878741e4e31a3a4b147.jpg" alt="">
-          <p class="title">Nhà bà Nữ</p>
-        </div>
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/73/9a/64/739a64918b0e054781b0a98ef4a2fbfe.jpg" alt="">
-          <p class="title">Nhà không bán</p>
-        </div>
-        <div class="movie-card">
-            <span class="label red">Full HD</span>
-          <img src="https://i.pinimg.com/736x/09/46/08/094608ad7d7e676ab5379fd600dd9b46.jpg" alt="">
-          <p class="title">Xóm manh động</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div class="STT">
-    <ul>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
-    </ul>
-  </div>
+    </div>
 </section>
-  <footer class="footer">
+  </div>
+    <footer class="footer">
   <div class="footer-container">
     <div class="footer-section">
       <h2 class="logo">
-        <img src="Video/Vintage_movie_film_camera_logo-removebg-preview.png" class="logo-img" />
+        <img src="Video/Vintage_movie_film_camera_logo-removebg-preview.png" alt="PhimMoi+ Logo" class="logo-img" />
         iMovie<span>+</span>
       </h2>
       <p><strong>iMovie and Chill</strong> - Website xem phim trực tuyến chất lượng cao, cập nhật phim mới nhất vietsub mỗi ngày, xem miễn phí hàng nghìn bộ phim HD/4K đa thể loại.</p>
@@ -356,13 +288,8 @@
     </div>
   </div>
 </footer>
-
-        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
- $(document).ready(function(){
-    $('.banner').banner();
-  });
-</script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="Movie.js"></script>
 </body>
 </html>
